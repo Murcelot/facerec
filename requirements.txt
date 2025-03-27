@@ -1,0 +1,6 @@
+numpy==2.2.3
+pandas==2.2.3
+positional_encodings==6.0.4
+torch==2.5.1
+torchvision==0.20.1
+tqdm==4.67.1
