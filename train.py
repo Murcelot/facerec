@@ -185,10 +185,5 @@ for state in optimizer.state.values():
         if isinstance(v, torch.Tensor):
             state[k] = v.cuda()
 
-for state in optimizer.state.values():
-    for k, v in state.items():
-        if isinstance(v, torch.Tensor):
-            state[k] = v.cuda()
-
 training_loop((train_dataloader_real, train_dataloader_whole), val_dataloader_whole, max_epochs, switch_epochs, model, optimizer, scheduler, criterion, device, 5, epoch)
 print('Done!')
